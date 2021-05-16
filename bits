@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() 
+{
+int f;
+scanf("%d",&t);
+while(f--)
+{
+    int k,r;
+    scanf("%d",&k);
+    int a[k];
+    for(r=0;r<k;r++)
+    scanf("%d",&a[r]);
+    for(r=0;r<k-1;r++)
+    {
+        a[r]=(a[r]|a[r+1]);
+    }
+    for(r=0;r<k;r++)
+    printf("%d ",a[r]);
+    printf("\k");
+}
+return 0;
+}
